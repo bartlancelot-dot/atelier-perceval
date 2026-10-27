@@ -1,0 +1,7 @@
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+.netlify/
+# Photos brutes avant préparation (ne pas publier)
+photos-brutes/

@@ -1,0 +1,15 @@
+# Site statique : aucun build, le dossier racine est publié tel quel.
+[build]
+  publish = "."
+
+# Les photos changent rarement : cache long côté navigateur.
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
